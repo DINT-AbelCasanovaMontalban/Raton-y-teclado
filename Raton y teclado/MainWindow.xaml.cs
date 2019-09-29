@@ -89,5 +89,70 @@ namespace Raton_y_teclado
             }
 
         }
+
+        private void TextBox1_GotFocus(object sender, RoutedEventArgs e)
+        {
+            FocoTextBox.Text = "TextBox 1";
+        }
+
+        private void TextBox2_GotFocus(object sender, RoutedEventArgs e)
+        {
+            FocoTextBox.Text = "TextBox 2";
+        }
+
+        private void TextBox3_GotFocus(object sender, RoutedEventArgs e)
+        {
+            FocoTextBox.Text = "TextBox 3";
+        }
+
+        private void TextBox3_MouseEnter(object sender, MouseEventArgs e)
+        {
+            RatonSobreTextBox.Text = "TextBox 3";
+        }
+
+        private void TextBox3_MouseLeave(object sender, MouseEventArgs e)
+        {
+            RatonSobreTextBox.Text = "";
+        }
+
+        private void TextBox2_MouseEnter(object sender, MouseEventArgs e)
+        {
+            RatonSobreTextBox.Text = "TextBox 2";
+        }
+
+        private void TextBox2_MouseLeave(object sender, MouseEventArgs e)
+        {
+            RatonSobreTextBox.Text = "";
+        }
+
+        private void TextBox1_MouseEnter(object sender, MouseEventArgs e)
+        {
+            RatonSobreTextBox.Text = "TextBox 1";
+        }
+
+        private void TextBox1_MouseLeave(object sender, MouseEventArgs e)
+        {
+            RatonSobreTextBox.Text = "";
+        }
+
+        private void FocoTextBox_MouseEnter(object sender, MouseEventArgs e)
+        {
+            RatonSobreTextBox.Text = "FocoTextBox";
+        }
+
+        private void FocoTextBox_MouseLeave(object sender, MouseEventArgs e)
+        {
+            RatonSobreTextBox.Text = "";
+        }
+
+        private void RatonSobreTextBox_MouseEnter(object sender, MouseEventArgs e)
+        {
+            RatonSobreTextBox.Text = "RatonSobreTextBox";
+        }
+
+        private void RatonSobreTextBox_MouseLeave(object sender, MouseEventArgs e)
+        {
+            RatonSobreTextBox.Text = "";
+        }
     }
 }

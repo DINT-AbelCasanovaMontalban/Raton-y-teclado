@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" MouseLeftButtonUp="Window_MouseLeftButtonUp" MouseLeftButtonDown="Window_MouseLeftButtonDown" MouseRightButtonDown="Window_MouseRightButtonDown" MouseRightButtonUp="Window_MouseRightButtonUp">
     <Grid>
-        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="23" Margin="117,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox1_TextChanged"/>
-        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="23" Margin="117,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="TextBox2_KeyDown"/>
-        <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Height="23" Margin="117,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="TextBox3_KeyDown" />
-        <TextBox x:Name="FocoTextBox" HorizontalAlignment="Left" Height="23" Margin="478,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="RatonSobreTextBox" HorizontalAlignment="Left" Height="23" Margin="478,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="23" Margin="117,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox1_TextChanged" GotFocus="TextBox1_GotFocus" MouseEnter="TextBox1_MouseEnter" MouseLeave="TextBox1_MouseLeave"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="23" Margin="117,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="TextBox2_KeyDown" GotFocus="TextBox2_GotFocus" MouseEnter="TextBox2_MouseEnter" MouseLeave="TextBox2_MouseLeave"/>
+        <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Height="23" Margin="117,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="TextBox3_KeyDown" GotFocus="TextBox3_GotFocus" MouseEnter="TextBox3_MouseEnter" MouseLeave="TextBox3_MouseLeave"/>
+        <TextBox x:Name="FocoTextBox" HorizontalAlignment="Left" Height="23" Margin="478,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MouseEnter="FocoTextBox_MouseEnter" MouseLeave="FocoTextBox_MouseLeave" />
+        <TextBox x:Name="RatonSobreTextBox" HorizontalAlignment="Left" Height="23" Margin="478,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MouseEnter="RatonSobreTextBox_MouseEnter" MouseLeave="RatonSobreTextBox_MouseLeave"/>
         <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="117,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"><Run Text="TextBox 1"/><LineBreak/><Run/></TextBlock>
         <TextBlock x:Name="TextBlock2" HorizontalAlignment="Left" Margin="117,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="TextBox 2"/><LineBreak/><Run/></TextBlock>
         <TextBlock x:Name="TextBlock3" HorizontalAlignment="Left" Margin="117,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="TextBox 3"/><LineBreak/><Run/></TextBlock>
