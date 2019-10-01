@@ -24,6 +24,8 @@ namespace Raton_y_teclado
         {
             InitializeComponent();
             TextBox2.IsReadOnly = true;
+            FocoTextBox.IsReadOnly=true;
+            RatonSobreTextBox.IsReadOnly = true;
             
         }
 
@@ -90,19 +92,9 @@ namespace Raton_y_teclado
 
         }
 
-        private void TextBox1_GotFocus(object sender, RoutedEventArgs e)
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            FocoTextBox.Text = "TextBox 1";
-        }
-
-        private void TextBox2_GotFocus(object sender, RoutedEventArgs e)
-        {
-            FocoTextBox.Text = "TextBox 2";
-        }
-
-        private void TextBox3_GotFocus(object sender, RoutedEventArgs e)
-        {
-            FocoTextBox.Text = "TextBox 3";
+            FocoTextBox.Text = ((TextBox)sender).Name;
         }
 
         private void TextBox3_MouseEnter(object sender, MouseEventArgs e)
@@ -153,6 +145,11 @@ namespace Raton_y_teclado
         private void RatonSobreTextBox_MouseLeave(object sender, MouseEventArgs e)
         {
             RatonSobreTextBox.Text = "";
+        }
+
+        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            FocoTextBox.Text = "";
         }
     }
 }
