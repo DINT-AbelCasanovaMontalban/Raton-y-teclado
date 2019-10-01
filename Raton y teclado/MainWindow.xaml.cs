@@ -24,8 +24,6 @@ namespace Raton_y_teclado
         {
             InitializeComponent();
             TextBox2.IsReadOnly = true;
-            FocoTextBox.IsReadOnly=true;
-            RatonSobreTextBox.IsReadOnly = true;
             
         }
 
